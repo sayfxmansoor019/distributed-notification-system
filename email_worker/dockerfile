@@ -1,0 +1,15 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+COPY . /app
+
+RUN pip install --no-cache-dir \
+    kafka-python \
+    prometheus-client \
+    redis \
+    sqlalchemy \
+    psycopg2-binary \
+    python-dotenv
+
+CMD ["python", "email_worker/consumer.py"]

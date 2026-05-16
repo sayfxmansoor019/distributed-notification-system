@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+kafka-python
+sqlalchemy
+psycopg2-binary
+redis
+python-dotenv
+prometheus-client
+asyncpg
+email-validator
